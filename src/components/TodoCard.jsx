@@ -2,7 +2,9 @@ const TodoCard = () => {
   return (
     <section class="body-font text-gray-600">
       <div class="container mx-auto flex flex-col items-center px-5 py-4 md:flex-row">
+        {/* checkbox */}
         <span class="mr-4 inline-flex h-8 w-8 items-center justify-center rounded-full bg-indigo-100 text-indigo-500">
+          {/* check icon --start-- */}
           <svg
             fill="none"
             stroke="currentColor"
@@ -14,6 +16,7 @@ const TodoCard = () => {
           >
             <path d="M20 6L9 17l-5-5"></path>
           </svg>
+          {/* --end-- */}
         </span>
         <div class="mb-6 flex w-full flex-col pr-0 text-center md:mb-0 md:w-auto md:pr-10 md:text-left">
           <h2 class="title-font text-xs font-medium tracking-widest text-indigo-500">
@@ -24,6 +27,7 @@ const TodoCard = () => {
           </h1>
         </div>
         <div class="mx-auto flex flex-shrink-0 items-center space-x-4 md:ml-auto md:mr-0">
+          {/* Edit Todo Button */}
           <button class="h-12 w-12 items-center rounded-lg bg-gray-100 py-2 px-3 hover:bg-gray-200 focus:outline-none">
             <svg
               fill="none"
@@ -40,6 +44,8 @@ const TodoCard = () => {
               />
             </svg>
           </button>
+
+          {/* Delete todo Button */}
           <button class="h-12 w-12 items-center rounded-lg bg-gray-100 py-2 px-3 hover:bg-gray-200 focus:outline-none">
             <svg
               fill="none"
